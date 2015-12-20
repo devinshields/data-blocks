@@ -4,13 +4,17 @@
 #
 
 
-#
-NOTEBOOK_FILE_NAME='data_blocks.ipynb'
-NOTEBOOK_FILE_PATH='notebooks/data_blocks.ipynb'
+# input configs
+NOTEBOOK_FILE_DIR='./notebooks'
+NOTEBOOK_FILE_NAME='data_blocks'
+NOTEBOOK_FILE_EXTENSION='ipynb'
+NOTEBOOK_FILE_PATH="$NOTEBOOK_FILE_DIR/$NOTEBOOK_FILE_NAME.$NOTEBOOK_FILE_EXTENSION"
+
+# output configs
 OUTPUT_DIRECTORY='./build'
+OUTPUT_FILE_NAME='index.html'
+OUTPUT_FILE_PATH="$OUTPUT_DIRECTORY/$OUTPUT_FILE_NAME"
 
-
-#
-ipython nbconvert --output "$OUTPUT_DIRECTORY/$NOTEBOOK_FILE_NAME" $NOTEBOOK_FILE_PATH
-
+# render & export
+ipython nbconvert --output "$OUTPUT_FILE_PATH" $NOTEBOOK_FILE_PATH
 
