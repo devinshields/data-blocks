@@ -11,10 +11,13 @@ experimental: transform notebook research results into web-sharable knowledge bl
 
 ### inspiration
 
-* the python world does have the ipython notebook viewer
+* the python world **does** have the ipython notebook viewer
   * but the lack of a building block standard makes finding
   * and re-using code slow and unreliable
   
+* a major difference I've noticed when working with notebooks is
+  * that the graph, or image, or whatever is intersting there is "below the fold". Data folks need to
+  * get better at making and **web-sharing executive-summary versions** of our researh.
   
 * I'm looking more towards [bl.ocks.org](http://bl.ocks.org/mbostock) and
   * the awesome open source community that builds d3.sj
